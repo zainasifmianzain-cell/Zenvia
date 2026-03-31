@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallets</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="accessories.css" />
+    <link rel="stylesheet" href="details.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="slider">
+        <div class="headline-container">
+          <div class="headline-wrapper" id="headline-wrapper">
+            <h2 class="headline">
+              Box available on orders above Rs 5000 only/
+            </h2>
+            <h2 class="headline">Free shipping for orders above Rs 10000/</h2>
+            <h2 class="headline">Use code #zn302 for extra discount</h2>
+            <h2 class="headline">Quality and relaibility</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="navBar">
+        <nav>
+          <div class="logo">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="pcLinks">
+            <ul>
+              <li>
+                <a href="accessories.html">Accessories</a>
+                <a href="cotton.html">Cotton</a>
+                <a href="wallets.html">Wallet</a>
+                <a href="perfumes.html">Perfume</a>
+                <a href="shawls.html">Shawl</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobileLinks" id="mobileMenu">
+            <ul>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="cotton.html">Cotton</a></li>
+              <li><a href="wallets.html">Wallet</a></li>
+              <li><a href="perfumes.html">Perfume</a></li>
+              <li><a href="shawls.html">Shawl</a></li>
+            </ul>
+          </div>
+
+          <div class="icons">
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+            <i id="user" class="fa-regular fa-user"></i>
+            <i id="cart" class="fa-solid fa-cart-arrow-down"></i>
+            <i id="bars" class="fa-solid fa-bars"></i>
+          </div>
+
+          <div id="searchInput">
+            <input type="text" placeholder="Search our collections..." />
+            <button type="submit"></button>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="page-header">
+      <div class="goHome">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      </div>
+      <h1>Showcase Wallets</h1>
+      <p>The finishing touches for the modern gentleman.</p>
+    </section>
+
+    <section class="product-container">
+      <aside class="filter-sidebar">
+        <div class="heading">
+          <h3>Filter By</h3>
+        </div>
+        <div class="filter-group">
+          <h4>Category</h4>
+          <label><input type="checkbox" /> Wallet</label>
+          <label><input type="checkbox" /> Pocket Squares</label>
+          <label><input type="checkbox" /> Surprise Boxes</label>
+          <label><input type="checkbox" /> Cons</label>
+        </div>
+        <div class="filter-group">
+          <h4>Price Range</h4>
+          <input type="range" min="500" max="5000" step="100" />
+          <div class="price-labels">
+            <span>Rs 500</span>
+            <span>Rs 5000</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/wallet1.webp" alt="Royal Silver Cufflinks" />
+            <span class="badge">New</span>
+           
+          </div>
+          <div class="product-info">
+            <h3>Slate Magnetic Wallet</h3>
+            <p class="price">Rs 2,500</p>
+            <a href="details.html?id=5" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/wallet2.webp" alt="Metallic Button Set" />
+           
+          </div>
+          <div class="product-info">
+            <h3>Dollar Size Wallet</h3>
+            <p class="price">Rs 1,200</p>
+            <a href="details.html?id=6" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/wallet3.webp" alt="Silk Pocket Square" />
+           
+          </div>
+          <div class="product-info">
+            <h3>Matt Finish Wallet</h3>
+            <p class="price">Rs 1,800</p>
+            <a href="details.html?id=7" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/wallet4.webp" alt="Premium Latha Cap" />
+            
+          </div>
+          <div class="product-info">
+            <h3>Long Zip Leather</h3>
+            <p class="price">Rs 2,000</p>
+            <a href="details.html?id=8" class="view-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-container">
+      <div class="cart-wrapper">
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-items">
+         
+        </div>
+        <div class="prices">
+          <h4>Price:</h4>
+          <h4>0.00$</h4>
+        </div>
+
+        <div class="cart-btn">
+          <a class="close-cart">Close</a>
+          <a class="btn-primary checkout-btn pay-now">Check Out</a>
+        </div>
+      </div>
+    </section>
+
+     <section class="checkout-container">
+<div class="checkout-overlay" id="checkoutSection">
+  <div class="checkout-card">
+    <i class="fa-solid fa-xmark close-checkout" id="closeCheckout"></i>
+    
+    <div class="brand-header">
+      <h1 class="zenvia-logo">ZENVIA</h1>
+      <div class="badge">Secure Payment Gateway</div>
+    </div>
+
+    <div class="checkout-main">
+      <div class="payment-options">
+        <label class="option-card">
+          <input type="radio" name="pay" checked>
+          <div class="option-content">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>Credit / Debit Card</span>
+          </div>
+        </label>
+        
+        <label class="option-card">
+          <input type="radio" name="pay">
+          <div class="option-content">
+            <i class="fa-brands fa-paypal"></i>
+            <span>Jazz Cash / Easy Paisa</span>
+          </div>
+        </label>
+
+        <label class="option-card">
+          <input type="radio" name="pay">
+          <div class="option-content">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Cash on Delivery</span>
+          </div>
+        </label>
+      </div>
+      
+      <button class="primary-checkout-btn">Complete Purchase</button>
+      <p class="secure-text"><i class="fa-solid fa-shield-halved"></i> 256-bit SSL Encryption</p>
+    </div>
+  </div>
+</div>
+  </section>
+
+    <section class="loginForm">
+      <div class="login-overlay" id="loginSection">
+  <div class="login-card">
+    <i class="fa-solid fa-xmark close-login" id="closeLogin"></i>
+    <h2>Welcome Back</h2>
+    <p>Login to your Zenvia account</p>
+    
+    <form>
+      <div class="input-group">
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="login-btn">Sign In</button>
+    </form>
+    
+    <div class="login-footer">
+      <span>Don't have an account? <a href="#">Register</a></span>
+    </div>
+  </div>
+</div>
+    </section>
+<section class="scroll">
+    <button id="scrollTopBtn" class="scroll-top-btn">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+   </section>
+ <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <img src="./images/logo.png" alt="Zelvia Logo" class="footer-logo" />
+          <p>
+            Redefining eastern elegance with premium unstitched collections for
+            the modern man. Quality, heritage, and style in every thread.
+          </p>
+          <div class="social-links">
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-tiktok"></i></a>
+            <a><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="wallets.html">New Wallets</a></li>
+            <li><a href="cotton.html">Cotton Series</a></li>
+            <li><a href="shawls.html">Luxury Shawls</a></li>
+            <li><a href="perfumes.html">Signature Perfumes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a>Track Order</a></li>
+            <li><a>Shipping Policy</a></li>
+            <li><a>Return & Exchange</a></li>
+            <li><a>FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <p><i class="fa-solid fa-envelope"></i> zainasifmianzain@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +92 306 8401652</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Fashion District, Fsd,
+            PK
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zelvia Premium. All Rights Reserved.</p>
+        <div class="payment-methods">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <span>Cash on Delivery</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="details.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

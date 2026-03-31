@@ -1,0 +1,169 @@
+:root {
+  --brand-brown: #881818;
+  --brand-gold: #bf630d;
+  --dark-text: #222;
+  --light-bg: #f9f9f9;
+}
+
+.details-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 5%;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.detailsWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details-image img {
+  height: 400px;
+  width: 400px;
+  border-radius: 4px;
+}
+
+.details-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--dark-text);
+}
+
+.price-tag {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+}
+
+.viewing-status {
+  color: #28a745;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shipping-alert {
+  color: var(--brand-gold);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.trust-badges {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.purchase-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.qty-and-cart {
+  display: flex;
+  gap: 15px;
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.qty-selector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.qty-selector input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  flex-grow: 1;
+  background: var(--dark-text);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buy-now-btn {
+  background: var(--brand-gold);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.pickup-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 880px) {
+  .detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+  }
+  .details-info h1 {
+    font-size: 1.6rem;
+  }
+  .price-tag {
+    font-size: 1.2rem;
+  }
+}

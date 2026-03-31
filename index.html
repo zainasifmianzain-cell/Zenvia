@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zelvia</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="accessories.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -36,41 +38,62 @@
           <div class="pcLinks">
             <ul>
               <li>
-                <a href="">Accessories</a>
-                <a href="">Cotton</a>
-                <a href="">Wallet</a>
-                <a href="">Perfume</a>
-                <a href="">Shawl</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="cotton.html">Cotton</a>
+                <a href="wallets.html">Wallet</a>
+                <a href="perfumes.html">Perfume</a>
+                <a href="shawls.html">Shawl</a>
               </li>
             </ul>
           </div>
 
-          <div class="navBar"></div>
-
           <div class="mobileLinks" id="mobileMenu">
             <ul>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Cotton</a></li>
-              <li><a href="">Wallet</a></li>
-              <li><a href="">Perfume</a></li>
-              <li><a href="">Shawl</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="cotton.html">Cotton</a></li>
+              <li><a href="wallets.html">Wallet</a></li>
+              <li><a href="perfumes.html">Perfume</a></li>
+              <li><a href="shawls.html">Shawl</a></li>
             </ul>
           </div>
 
           <div class="icons">
             <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
             <i id="user" class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-cart-arrow-down"></i>
+            <i id="cart" class="fa-solid fa-cart-arrow-down"></i>
             <i id="bars" class="fa-solid fa-bars"></i>
           </div>
 
           <div id="searchInput">
             <input type="text" placeholder="Search our collections..." />
-            <button type="submit">
-            </button>
+            <button type="submit"></button>
           </div>
         </nav>
       </div>
+    </section>
+
+    <section class="loginForm">
+      <div class="login-overlay" id="loginSection">
+  <div class="login-card">
+    <i class="fa-solid fa-xmark close-login" id="closeLogin"></i>
+    <h2>Welcome Back</h2>
+    <p>Login to your Zenvia account</p>
+    
+    <form>
+      <div class="input-group">
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="login-btn">Sign In</button>
+    </form>
+    
+    <div class="login-footer">
+      <span>Don't have an account? <a href="#">Register</a></span>
+    </div>
+  </div>
+</div>
     </section>
 
     <section class="mainPage">
@@ -87,7 +110,7 @@
           </p>
           <div class="cta-buttons">
             <a href="#collections" class="btn-primary">Shop Collection</a>
-            <a href="" class="btn-secondary">New Arrivals</a>
+            <a href="cotton.html" class="btn-secondary">New Arrivals</a>
           </div>
         </div>
         <div class="mainImage">
@@ -105,10 +128,10 @@
         <div class="collectionCards">
           <div class="collectionWrapper wallet">
             <div class="image">
-              <img src="wallets.webp" alt="" />
+              <img src="./images/wallets.webp" alt="" />
             </div>
             <div class="text">
-              <a href="">Wallets</a>
+              <a href="wallets.html">Wallets</a>
             </div>
           </div>
 
@@ -117,7 +140,7 @@
               <img src="./images/cotton.webp" alt="" />
             </div>
             <div class="text">
-              <a href="">Cotton</a>
+              <a href="cotton.html">Cotton</a>
             </div>
           </div>
 
@@ -126,7 +149,7 @@
               <img src="./images/fourseason.webp" alt="" />
             </div>
             <div class="text">
-              <a href="">Accessories</a>
+              <a href="accessories.html">Accessories</a>
             </div>
           </div>
 
@@ -135,7 +158,7 @@
               <img src="./images/perfumes.webp" alt="" />
             </div>
             <div class="text">
-              <a href="">Perfumes</a>
+              <a href="perfumes.html">Perfumes</a>
             </div>
           </div>
 
@@ -144,7 +167,7 @@
               <img src="./images/shwals.webp" alt="" />
             </div>
             <div class="text">
-              <a href="">Shawls</a>
+              <a href="shawls.html">Shawls</a>
             </div>
           </div>
         </div>
@@ -153,24 +176,22 @@
 
     <section class="semiMain">
       <div class="semiWrapper">
-        <div class="semiText">
-          <h1>Unstiched Fabric</h1>
-          <p>
-            Where quality fabric meets elegance—designed for men who prefer
-            style stitched their own way.
-          </p>
-          <a href="">Add to cart</a>
-        </div>
+       <img src="./images/semiMain.webp" alt="">
       </div>
     </section>
+   <section class="scroll">
+    <button id="scrollTopBtn" class="scroll-top-btn">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+   </section>
 
     <section class="contact-section">
       <div class="contact-container">
         <div class="contact-info reveal">
           <span class="subtitle">Get in Touch</span>
           <h1>
-            Let's start a <br />
-            conversation.
+            Let's Start a <br />
+            Conversation.
           </h1>
           <p>
             Whether you have a question about our collections or need assistance
@@ -180,15 +201,15 @@
           <div class="info-details">
             <div class="info-item">
               <i class="fa-solid fa-location-dot"></i>
-              <span>123 Design St, Fashion District, PK</span>
+              <span>Narwala road, fsd, pk</span>
             </div>
             <div class="info-item">
               <i class="fa-solid fa-envelope"></i>
-              <span>support@zelvia.com</span>
+              <span>zainasifmianzain@gmail.com</span>
             </div>
             <div class="info-item">
               <i class="fa-solid fa-phone"></i>
-              <span>+92 300 1234567</span>
+              <span>+92 306 8401652</span>
             </div>
           </div>
         </div>
@@ -268,6 +289,104 @@
       </div>
     </section>
 
+    <section class="craftsmanship">
+      <div class="craft-container">
+        <div class="craft-row">
+          <div class="craft-image reveal">
+            <img src="./images/shwals.webp" alt="Premium Fabric Texture" />
+          </div>
+          <div class="craft-text reveal">
+            <span class="tag">The Material</span>
+            <h2>Woven with Precision</h2>
+            <p>
+              Our cotton is sourced from the finest long-staple fibers, ensuring
+              a breathable, soft-touch finish that lasts for years. Experience
+              the comfort of high-thread-count luxury.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Cotton_production_in_Pakistan" class="read-more">Learn About Our Process</a>
+          </div>
+        </div>
+
+        <div class="craft-row reverse">
+          <div class="craft-text reveal">
+            <span class="tag">The Legacy</span>
+            <h2>Timeless Artistry</h2>
+            <p>
+              Every piece in our Eastern Unstitched collection is a tribute to
+              traditional craftsmanship, modernized for the contemporary man who
+              refuses to compromise on elegance.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Cotton_production_in_Pakistan" class="read-more">View Lookbook</a>
+          </div>
+          <div class="craft-image reveal">
+            <img src="./images/cotton.webp" alt="Traditional Men's Wear" />
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="cart-container">
+      <div class="cart-wrapper">
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-items">
+          
+        </div>
+        <div class="prices">
+          <h4>Total: </h4>
+          <h4>0.00$</h4>
+        </div>
+
+        <div class="cart-btn">
+          <a class="close-cart">Close</a>
+           <a class="checkout-btn">Check Out</a>
+          
+        </div>
+      </div>
+    </section>
+
+  <section class="checkout-container">
+<div class="checkout-overlay" id="checkoutSection">
+  <div class="checkout-card">
+    <i class="fa-solid fa-xmark close-checkout" id="closeCheckout"></i>
+    
+    <div class="brand-header">
+      <h1 class="zenvia-logo">ZENVIA</h1>
+      <div class="badge">Secure Payment Gateway</div>
+    </div>
+
+    <div class="checkout-main">
+      <div class="payment-options">
+        <label class="option-card">
+          <input type="radio" name="pay" checked>
+          <div class="option-content">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>Credit / Debit Card</span>
+          </div>
+        </label>
+        
+        <label class="option-card">
+          <input type="radio" name="pay">
+          <div class="option-content">
+            <i class="fa-brands fa-paypal"></i>
+            <span>Jazz Cash / Easy Paisa</span>
+          </div>
+        </label>
+
+        <label class="option-card">
+          <input type="radio" name="pay">
+          <div class="option-content">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Cash on Delivery</span>
+          </div>
+        </label>
+      </div>
+      
+      <button class="primary-checkout-btn">Complete Purchase</button>
+      <p class="secure-text"><i class="fa-solid fa-shield-halved"></i> 256-bit SSL Encryption</p>
+    </div>
+  </div>
+</div>
+  </section>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col brand-col">
@@ -277,46 +396,46 @@
             the modern man. Quality, heritage, and style in every thread.
           </p>
           <div class="social-links">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-tiktok"></i></a>
+            <a><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
         <div class="footer-col">
           <h4>Shop</h4>
           <ul>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Cotton Series</a></li>
-            <li><a href="#">Luxury Shawls</a></li>
-            <li><a href="#">Signature Perfumes</a></li>
+            <li><a href="wallets.html">New Wallets</a></li>
+            <li><a href="cotton.html">Cotton Series</a></li>
+            <li><a href="shawls.html">Luxury Shawls</a></li>
+            <li><a href="perfumes.html">Signature Perfumes</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Support</h4>
           <ul>
-            <li><a href="#">Track Order</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Return & Exchange</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a>Track Order</a></li>
+            <li><a>Shipping Policy</a></li>
+            <li><a>Return & Exchange</a></li>
+            <li><a>FAQs</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Visit Us</h4>
-          <p><i class="fa-solid fa-envelope"></i> info@zelvia.com</p>
-          <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+          <p><i class="fa-solid fa-envelope"></i> zainasifmianzain@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +92 306 8401652</p>
           <p>
-            <i class="fa-solid fa-location-dot"></i> Fashion District, Lahore,
+            <i class="fa-solid fa-location-dot"></i> Fashion District, Fsd,
             PK
           </p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 Zelvia Premium. All Rights Reserved.</p>
+        <p>&copy; 2026 Zelvia Premium. All Rights Reserved.</p>
         <div class="payment-methods">
           <i class="fa-brands fa-cc-visa"></i>
           <i class="fa-brands fa-cc-mastercard"></i>
@@ -326,5 +445,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="details.js"></script>
   </body>
 </html>
