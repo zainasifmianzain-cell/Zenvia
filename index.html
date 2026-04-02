@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zelvia</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="details.css">
-    <link rel="stylesheet" href="accessories.css">
+    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="accessories.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -74,26 +74,26 @@
 
     <section class="loginForm">
       <div class="login-overlay" id="loginSection">
-  <div class="login-card">
-    <i class="fa-solid fa-xmark close-login" id="closeLogin"></i>
-    <h2>Welcome Back</h2>
-    <p>Login to your Zenvia account</p>
-    
-    <form>
-      <div class="input-group">
-        <input type="email" placeholder="Email Address" required>
+        <div class="login-card">
+          <i class="fa-solid fa-xmark close-login" id="closeLogin"></i>
+          <h2>Welcome Back</h2>
+          <p>Login to your Zenvia account</p>
+
+          <form>
+            <div class="input-group">
+              <input type="email" placeholder="Email Address" required />
+            </div>
+            <div class="input-group">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <button type="submit" class="login-btn">Sign In</button>
+          </form>
+
+          <div class="login-footer">
+            <span>Don't have an account? <a href="#">Register</a></span>
+          </div>
+        </div>
       </div>
-      <div class="input-group">
-        <input type="password" placeholder="Password" required>
-      </div>
-      <button type="submit" class="login-btn">Sign In</button>
-    </form>
-    
-    <div class="login-footer">
-      <span>Don't have an account? <a href="#">Register</a></span>
-    </div>
-  </div>
-</div>
     </section>
 
     <section class="mainPage">
@@ -118,7 +118,37 @@
         </div>
       </div>
 
-      <div id="collections">
+    </section>
+       <section class="cinematic-video">
+    <div class="video-overlay"></div>
+    <video autoplay muted loop playsinline class="bg-video">
+    <source src="./images/textileCinema.mp4" type="video/mp4">
+</video>
+
+    <div class="video-content">
+        <div class="text-animate reveal">
+            <span class="gold-text">From Land to Luxury</span>
+            <h2 class="cinematic-title">The Spirit of the Fiber</h2>
+            <p class="cinematic-desc">
+                Witness the transformation of raw Pakistani cotton from the sun-drenched fields 
+                to the precision of modern industrial weaving.
+            </p>
+            <div class="video-stats">
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Organic Land</span>
+                </div>
+                <div class="divider"></div>
+                <div class="stat">
+                    <span class="stat-num">Industry</span>
+                    <span class="stat-label">Leading Tech</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="collection">
+   <div id="collections">
         <div class="collection-header">
           <span class="dash"></span>
           <h1>Explore Our Categories</h1>
@@ -172,18 +202,18 @@
           </div>
         </div>
       </div>
-    </section>
+</section>
 
     <section class="semiMain">
       <div class="semiWrapper">
-       <img src="./images/semiMain.webp" alt="">
+        <img src="./images/semiMain.webp" alt="" />
       </div>
     </section>
-   <section class="scroll">
-    <button id="scrollTopBtn" class="scroll-top-btn">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
-   </section>
+    <section class="scroll">
+      <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </section>
 
     <section class="contact-section">
       <div class="contact-container">
@@ -303,7 +333,11 @@
               a breathable, soft-touch finish that lasts for years. Experience
               the comfort of high-thread-count luxury.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Cotton_production_in_Pakistan" class="read-more">Learn About Our Process</a>
+            <a
+              href="https://en.wikipedia.org/wiki/Cotton_production_in_Pakistan"
+              class="read-more"
+              >Learn About Our Process</a
+            >
           </div>
         </div>
 
@@ -316,7 +350,11 @@
               traditional craftsmanship, modernized for the contemporary man who
               refuses to compromise on elegance.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Cotton_production_in_Pakistan" class="read-more">View Lookbook</a>
+            <a
+              href="https://en.wikipedia.org/wiki/Cotton_production_in_Pakistan"
+              class="read-more"
+              >View Lookbook</a
+            >
           </div>
           <div class="craft-image reveal">
             <img src="./images/cotton.webp" alt="Traditional Men's Wear" />
@@ -324,69 +362,140 @@
         </div>
       </div>
     </section>
-<section class="cart-container">
+    <section class="cart-container">
       <div class="cart-wrapper">
         <h1>Shopping Cart</h1>
 
-        <div class="cart-items">
-          
-        </div>
+        <div class="cart-items"></div>
         <div class="prices">
-          <h4>Total: </h4>
+          <h4>Total:</h4>
           <h4>0.00$</h4>
         </div>
 
         <div class="cart-btn">
           <a class="close-cart">Close</a>
-           <a class="checkout-btn">Check Out</a>
-          
+          <a class="checkout-btn">Check Out</a>
         </div>
       </div>
     </section>
 
-  <section class="checkout-container">
-<div class="checkout-overlay" id="checkoutSection">
-  <div class="checkout-card">
-    <i class="fa-solid fa-xmark close-checkout" id="closeCheckout"></i>
-    
-    <div class="brand-header">
-      <h1 class="zenvia-logo">ZENVIA</h1>
-      <div class="badge">Secure Payment Gateway</div>
-    </div>
+    <section class="checkout-container">
+      <div class="checkout-overlay" id="checkoutSection">
+        <div class="checkout-card">
+          <i class="fa-solid fa-xmark close-checkout" id="closeCheckout"></i>
 
-    <div class="checkout-main">
-      <div class="payment-options">
-        <label class="option-card">
-          <input type="radio" name="pay" checked>
-          <div class="option-content">
-            <i class="fa-solid fa-credit-card"></i>
-            <span>Credit / Debit Card</span>
+          <div class="brand-header">
+            <h1 class="zenvia-logo">ZENVIA</h1>
+            <div class="badge">Secure Payment Gateway</div>
           </div>
-        </label>
-        
-        <label class="option-card">
-          <input type="radio" name="pay">
-          <div class="option-content">
-            <i class="fa-brands fa-paypal"></i>
-            <span>Jazz Cash / Easy Paisa</span>
-          </div>
-        </label>
 
-        <label class="option-card">
-          <input type="radio" name="pay">
-          <div class="option-content">
-            <i class="fa-solid fa-truck-fast"></i>
-            <span>Cash on Delivery</span>
+          <div class="checkout-main">
+            <div class="payment-options">
+              <label class="option-card">
+                <input type="radio" name="pay" checked />
+                <div class="option-content">
+                  <i class="fa-solid fa-credit-card"></i>
+                  <span>Credit / Debit Card</span>
+                </div>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="pay" />
+                <div class="option-content">
+                  <i class="fa-brands fa-paypal"></i>
+                  <span>Jazz Cash / Easy Paisa</span>
+                </div>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="pay" />
+                <div class="option-content">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  <span>Cash on Delivery</span>
+                </div>
+              </label>
+            </div>
+
+            <button class="primary-checkout-btn">Complete Purchase</button>
+            <p class="secure-text">
+              <i class="fa-solid fa-shield-halved"></i> 256-bit SSL Encryption
+            </p>
           </div>
-        </label>
+        </div>
       </div>
-      
-      <button class="primary-checkout-btn">Complete Purchase</button>
-      <p class="secure-text"><i class="fa-solid fa-shield-halved"></i> 256-bit SSL Encryption</p>
-    </div>
-  </div>
-</div>
-  </section>
+    </section>
+
+    <section class="reviews">
+      <section class="testimonials">
+      <div class="collection-header">
+        <span class="dash"></span>
+        <h1>What Our Clients Say</h1>
+        <span class="dash"></span>
+      </div>
+
+      <div class="testimonial-container">
+        <div class="testimonial-card reveal">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The quality of the Egyptian cotton I ordered is unparalleled. The breathability and the sheen are exactly what I was looking for in premium unstitched fabric."
+          </p>
+          <div class="client-info">
+            <img src="https://ui-avatars.com/api/?name=Ahmed+Khan&background=0D8ABC&color=fff" alt="Client">
+            <div class="client-detail">
+              <h4>Ahmed Khan</h4>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Fast shipping and beautiful packaging. The signature perfume has a long-lasting scent that genuinely feels like luxury. Highly recommended!"
+          </p>
+          <div class="client-info">
+            <img src="https://ui-avatars.com/api/?name=Zaid+Ali&background=333&color=fff" alt="Client">
+            <div class="client-detail">
+              <h4>Zaid Ali</h4>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="review-text">
+            "I've bought several wallets from Zelvia. The leather quality and stitching are world-class. It's rare to find this level of craftsmanship locally."
+          </p>
+          <div class="client-info">
+            <img src="https://ui-avatars.com/api/?name=Omar+Sheikh&background=6b4f4f&color=fff" alt="Client">
+            <div class="client-detail">
+              <h4>Omar Sheikh</h4>
+              <span>Fashion Blogger</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col brand-col">
@@ -428,8 +537,7 @@
           <p><i class="fa-solid fa-envelope"></i> zainasifmianzain@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i> +92 306 8401652</p>
           <p>
-            <i class="fa-solid fa-location-dot"></i> Fashion District, Fsd,
-            PK
+            <i class="fa-solid fa-location-dot"></i> Fashion District, Fsd, PK
           </p>
         </div>
       </div>

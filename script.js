@@ -117,10 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkoutSection = document.getElementById("checkoutSection");
   const closeCheckout = document.getElementById("closeCheckout");
 
-  // Select all buttons that should open checkout (Buy Now, Checkout, etc.)
-  const checkoutTriggers = document.querySelectorAll(
-    ".checkout-btn, .pay-now",
-  );
+  const checkoutTriggers = document.querySelectorAll(".checkout-btn, .pay-now");
 
   checkoutTriggers.forEach((btn) => {
     btn.addEventListener("click", (e) => {
@@ -137,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Close on outside click
   window.addEventListener("click", (e) => {
     if (e.target === checkoutSection) {
       checkoutSection.classList.remove("active");
@@ -146,30 +142,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  // 1. Show/Hide button based on scroll position
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
 
 
 
 
 
+window.addEventListener('scroll', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-    // 1. Show/Hide button based on scroll position
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            scrollTopBtn.classList.add('show');
-        } else {
-            scrollTopBtn.classList.remove('show');
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
         }
-    });
-
-    // 2. Scroll to top logic
-    scrollTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // This makes the scroll smooth instead of a jump
-        });
-    });
+    }
 });
